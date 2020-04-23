@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#f5fdff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+            <ImageView
+                android:id="@+id/calendar"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:paddingLeft="10dp"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:src="@drawable/calendar"
+                android:onClick="OnClickHandler">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/textView_date"
+                android:layout_width="200dp"
+                android:layout_height="100dp"
+                android:textSize="20sp"
+                android:paddingTop="40dp"
+                />
+
+
+            <TextView
+                android:id="@+id/userID"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="145dp"
+                android:layout_marginTop="20dp"
+                android:textSize="20dp">
+
+
+            </TextView>
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo">
+
+
+        </ImageView>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+
+        <fragment
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/map"
+            tools:context=".SO2HistoryActivity"
+            android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+        <com.github.mikephil.charting.charts.LineChart
+
+            android:id="@+id/chart"
+
+            android:layout_width="match_parent"
+
+            android:layout_height="300dp" />
+
+
+    </LinearLayout>
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp">
+
+    </androidx.legacy.widget.Space>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

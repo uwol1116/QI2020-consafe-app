@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo_circle"
+        android:label="CONSAFE"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".COHistoryActivity"></activity>
+        <activity android:name=".O3HistoryActivity"></activity>
+        <activity android:name=".NO2HistoryActivity"></activity>
+        <activity android:name=".PM25HistoryActivity"></activity>
+
+        <activity
+            android:name=".SO2HistoryActivity"
+            android:label="@string/title_activity_so2_history"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".AQIHistoryAcitivity" />
+        <activity
+            android:name=".AirQualityActivity"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity
+            android:name=".HeartRelatedActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ForgetRequest" />
+        <activity android:name=".SignupRequest" />
+        <activity android:name=".LoginRequest" />
+        <activity
+            android:name=".TmpActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IDcancellationSuccessActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".HistoryActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".DeviceActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".IDcancellationActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".TransferCompleteActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ForgetPasswordActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".SignupActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MapActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyBHykkYa-5KZ6v8VTL1ZjUVSueixHlAGXo" />
+
+        <service android:name=".SerialService" />
+
+        <uses-library android:name="com.google.android.maps" />
+    </application>
+
+</manifest>

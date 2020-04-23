@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_current"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="@string/menu_current" />
+        <item
+            android:id="@+id/nav_history"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="HR History" />
+
+        <item
+            android:id="@+id/nav_device"
+            android:icon="@drawable/calendar"
+            android:title="AQI History">
+
+
+        </item>
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_menu_share"
+            android:title="@string/menu_profile" />
+        <item
+            android:id="@+id/nav_sign_out"
+            android:icon="@drawable/ic_menu_send"
+            android:title="@string/menu_sign_out" />
+    </group>
+
+    <item android:title="Communicate">
+        <menu></menu>
+    </item>
+
+</menu>

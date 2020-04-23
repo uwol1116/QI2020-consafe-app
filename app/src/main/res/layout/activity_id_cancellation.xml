@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f5fdff"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+
+
+        <Space
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5">
+
+        </Space>
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:background="@null"
+            android:scaleType="fitXY"
+            android:src="@drawable/logo">
+
+
+        </ImageView>
+
+
+    </LinearLayout>
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="120dp">
+
+    </androidx.legacy.widget.Space>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:text="Required Password"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:fontFamily="casual"
+        android:textStyle="bold">
+
+    </TextView>
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+
+    </androidx.legacy.widget.Space>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:text="password"
+        android:paddingTop="10dp"
+        android:paddingLeft="70dp">
+
+    </TextView>
+
+    <EditText
+        android:id="@+id/et_pass"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPassword"
+
+        android:layout_marginRight="70dp"
+        android:layout_marginLeft="70dp"
+        android:background="@drawable/teduri"/>
+    <androidx.legacy.widget.Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+    </androidx.legacy.widget.Space>
+
+    <Button
+        android:id="@+id/btn_pw_sm"
+        android:layout_width="159dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn_blue2"
+        android:text="SUBMIT"
+        android:textColor="#ffffffff">
+
+    </Button>
+
+</LinearLayout>

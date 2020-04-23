@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_si" type="id" />
+    <item name="txt_su" type="id" />
+    <item name="txt_fp" type="id" />
+    <item name="btn_join_us" type="id" />
+</resources>
